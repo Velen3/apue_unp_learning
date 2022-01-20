@@ -1,3 +1,15 @@
+# 以下文字及格式为练手用，目的是快速熟悉Markdown格式，文档来自
+[菜鸟教程](https://www.runoob.com/markdown/md-tutorial.html)
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
 # Markdown教程
 ![Markdown](https://www.runoob.com/wp-content/uploads/2019/03/iconfinder_markdown_298823.png)
 
