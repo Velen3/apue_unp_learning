@@ -356,3 +356,145 @@ Markdown 区块引用是在段落开头使用 `>` 符号 ，然后后面紧跟�
 
 ![img](https://www.runoob.com/wp-content/uploads/2019/03/EC3ED5D2-4F0D-492A-81B3-D485623D1A9E.jpg)
 
+# Markdown 图片
+Markdown 图片语法格式如下：
+
+    ![alt 属性文本](图片地址)
+
+    ![alt 属性文本](图片地址 "可选标题")
+
+* 开头一个感叹号 !
+* 接着一个方括号，里面放上图片的替代文字
+* 接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 'title' 属性的文字。
+
+使用实例：
+
+    ![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png)
+
+    ![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png "RUNOOB")
+
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/A042DF30-C232-46F3-8436-7D6C35351BBD.jpg)
+
+当然，你也可以像网址那样对图片网址使用变量:
+
+    这个链接用 1 作为网址变量 [RUNOOB][1].
+    然后在文档的结尾为变量赋值（网址）
+
+    [1]: http://static.runoob.com/images/runoob-logo.png
+
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/75AA6EBF-CC57-44A6-A585-5EE3DD94E42A.jpg)
+
+Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <img> 标签。
+
+    <img src="http://static.runoob.com/images/runoob-logo.png" width="50%">
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/55F2A67D-F4BD-4960-AC55-DC690A415878.jpg)
+
+---
+
+# Markdown 表格
+Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分隔表头和其他行。
+
+语法格式如下：
+
+    |  表头   | 表头  |
+    |  ----  | ----  |
+    | 单元格  | 单元格 |
+    | 单元格  | 单元格 |
+以上代码显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/23EACC50-38E0-4284-B99A-6BC22E284BAC.jpg)
+
+对齐方式
+
+__我们可以设置表格的对齐方式：__
+
+* `-:` 设置内容和标题栏居右对齐。
+* `:-` 设置内容和标题栏居左对齐。
+* `:-:` 设置内容和标题栏居中对齐。
+
+实例如下：
+
+    | 左对齐 | 右对齐 | 居中对齐 |
+    | :-----| ----: | :----: |
+    | 单元格 | 单元格 | 单元格 |
+    | 单元格 | 单元格 | 单元格 |
+
+以上代码显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/87DE9D5C-44FB-4693-8735-194D3779EC3E.jpg)
+
+# Markdown 高级技巧
+## 支持的 HTML 元素
+不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。
+
+目前支持的 HTML 元素有：```<kbd> <b> <i> <em> <sup> <sub> <br>```等 ，如：
+
+    使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
+
+输出结果为：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/81999271-F914-428D-B7BF-164BDC67CAAC.jpg)
+
+## 转义
+Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：
+
+    **文本加粗** 
+    \*\* 正常显示星号 \*\*
+
+输出结果为：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/CA0E0162-0C48-41CD-B57A-CB32A4287C02.jpg)
+
+Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：
+
+    \   反斜线
+    `   反引号
+    *   星号
+    _   下划线
+    {}  花括号
+    []  方括号
+    ()  小括号
+    #   井字号
+    +   加号
+    -   减号
+    .   英文句点
+    !   感叹号
+
+## 公式
+__Markdown Preview Enhanced__ 使用 [KaTeX](https://github.com/Khan/KaTeX) 或者 [MathJax](https://github.com/mathjax/MathJax) 来渲染数学表达式。
+
+KaTeX 拥有比 MathJax 更快的性能，但是它却少了很多 MathJax 拥有的特性。你可以查看 KaTeX supported functions/symbols 来了解 KaTeX 支持那些符号和函数。
+
+默认下的分隔符：
+
+* ```$...$ 或者 \(...\) 中的数学表达式将会在行内显示。```
+
+* ```$$...$$ 或者 \[...\] 或者 \`\`\`math 中的数学表达式将会在块内显示。```
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/0e408954-fda8-11e5-9eb4-562d7c0ca431.gif)
+
+    $$
+    \begin{Bmatrix}
+    a & b \\
+    c & d
+    \end{Bmatrix}
+    $$
+    $$
+    \begin{CD}
+    A @>a>> B \\
+    @VbVV @AAcA \\
+    C @= D
+    \end{CD}
+    $$
+
+输出结果为：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/A9031CEB-04DB-4822-9C98-2E99489D3662.jpeg)
+
+---
