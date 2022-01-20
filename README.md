@@ -232,3 +232,127 @@ Markdown 支持有序列表和无序列表。
 
 ![img](https://www.runoob.com/wp-content/uploads/2019/03/8ED795DA-F124-4E70-BA71-57CD9CF958A4.jpg)
 
+---
+
+# Markdown 区块
+Markdown 区块引用是在段落开头使用 `>` 符号 ，然后后面紧跟一个空格符号：
+
+    > 区块引用
+    > 菜鸟教程
+    > 学的不仅是技术更是梦想
+
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/DFE1124E-BC38-4C12-B7AC-053E560D4C9C.jpg)
+
+另外区块是可以嵌套的，一个 `>` 符号是最外层，两个 `>` 符号是第一层嵌套，以此类推：
+
+    > 最外层
+    > > 第一层嵌套
+    > > > 第二层嵌套
+
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/AA0A4A6A-33A7-48C7-971F-73FFC8FE85B0.jpg)
+
+## 区块中使用列表
+区块中使用列表实例如下：
+
+    > 区块中使用列表
+    > 1. 第一项
+    > 2. 第二项
+    > + 第一项
+    > + 第二项
+    > + 第三项
+
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/E3BF6399-6483-4C7A-8502-AE75E8D66C96.jpg)
+
+## 列表中使用区块
+如果要在列表项目内放进区块，那么就需要在 > 前添加四个空格的缩进。
+
+列表中使用区块实例如下：
+
+    * 第一项
+        > 菜鸟教程
+        > 学的不仅是技术更是梦想
+    * 第二项
+
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/1B894FB4-53AC-4E2D-BA30-F4AE4DFA8B97.jpg)
+
+---
+
+# Markdown 代码
+如果是段落上的一个函数或片段的代码可以用反引号把它包起来（\`），例如：
+
+    `printf()` 函数
+
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/C928FDA3-E0A7-4AFF-AB2A-B3AF44F93DF9.jpg)
+
+## 代码区块
+代码区块使用 4 个空格或者一个制表符（Tab 键）。
+
+实例如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/55EDFE05-5F27-458E-AFE0-7B96685C9603.jpg)
+
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/6DC89E5C-B41A-4938-97D8-D7D06B879F91.jpg)
+
+你也可以用 ``` 包裹一段代码，并指定一种语言（也可以不指定）：
+
+    ```javascript
+    $(document).ready(function () {
+        alert('RUNOOB');
+    });
+    ```
+
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/88F52386-2F98-4D7E-8935-E43BECA6D868.jpg)
+
+---
+
+# Markdown 链接
+链接使用方法如下：
+
+    [链接名称](链接地址)
+
+    或者
+
+    <链接地址>
+例如：
+
+    这是一个链接 [菜鸟教程](https://www.runoob.com)
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/49E6CB42-F780-4DA6-8290-DC757B51FB9A.jpg)
+
+直接使用链接地址：
+
+    <https://www.runoob.com>
+
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/9BFF60A1-DD71-4B63-987B-4665B31C7787.jpg)
+
+## 高级链接
+我们可以通过变量来设置一个链接，变量赋值在文档末尾进行：
+
+    这个链接用 1 作为网址变量 [Google][1]
+    这个链接用 runoob 作为网址变量 [Runoob][runoob]
+    然后在文档的结尾为变量赋值（网址）
+
+    [1]: http://www.google.com/
+    [runoob]: http://www.runoob.com/
+
+显示结果如下：
+
+![img](https://www.runoob.com/wp-content/uploads/2019/03/EC3ED5D2-4F0D-492A-81B3-D485623D1A9E.jpg)
+
